@@ -17,6 +17,11 @@
             display: grid;
             place-items: center;
         }
+        h1{
+            font-size: 2rem;
+            color: rgb(85, 0, 255);
+            text-align: center;
+        }
 
         .imageslider{
             width: 40%;
@@ -24,8 +29,15 @@
             background-image: url(images/shan1.jpg);
             background-size: 100% 100%;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-            animation: imageslider 15s linear infinite;
-            margin: 5%;
+            animation: imageslider 10s linear infinite reverse;
+            margin: 2%;
+        }
+
+        h1 span{
+            font-size: 40px;
+            color: rgb(255, 0, 0);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
         }
 
         @keyframes imageslider {
@@ -49,6 +61,10 @@
     </style>
 </head>
 <body>
+    <h1><b>Image Slider
+        <br> 
+        <span>By Shanawer Jaffery</span>
+    </b></h1>
     <div class="imageslider"></div>
 </body>
 </html>
